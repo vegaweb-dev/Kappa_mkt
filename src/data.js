@@ -1,18 +1,18 @@
 const imageSlide = [
   {
-    url: 'pic-1.jpg',
-    title: 'fggfdg',
-    body: 'df',
+    url: 'hero.jpg',
+    title: 'Invierte de manera inteligente',
+    body: '',
   },
   {
-    url: 'pic-2.jpg',
-    title: 'gfhfghh',
-    body: 'gfhdh',
+    url: 'about.jpg',
+    title: 'Entrenate con los mejores',
+    body: '',
   },
   {
-    url: 'pic-3.jpg',
-    title: 'ghdh',
-    body: 'ghgfhgf',
+    url: 'hero.jpg',
+    title: 'Domina el trading',
+    body: '',
   },
 ];
 

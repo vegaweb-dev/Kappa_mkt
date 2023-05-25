@@ -1,4 +1,4 @@
-import { useState,useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import './BackgroundSlider.css';
 import imageSlide from './data';
 
@@ -18,7 +18,9 @@ const BackgroundSlider = () => {
     backgroundImage: `url(${imageSlide[currentState].url})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    height: '100%',
+    height: '1080px',
+    width: '1080px',
+    transform: 'scale(1.1)',
   };
   const goToNext = (currentState) => {
     setCurrentState(currentState);
@@ -26,7 +28,7 @@ const BackgroundSlider = () => {
   return (
     <div className="container-style">
       <div style={bgImageStyle}></div>
-      <div className='transparent-background'></div>
+      <div className="transparent-background"></div>
       <div className="description">
         <div>
           <h1>{imageSlide[currentState].title}</h1>
@@ -34,9 +36,11 @@ const BackgroundSlider = () => {
         </div>
         <div className="carrousel-boult">
           {imageSlide.map((imageSlide, currentState) => (
-            <span key={currentState} onClick={() => goToNext(currentState)}>
-              222
-            </span>
+            <span
+              className="spamy"
+              key={currentState}
+              onClick={() => goToNext(currentState)}
+            ></span>
           ))}
         </div>
       </div>
